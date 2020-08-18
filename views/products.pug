@@ -1,4 +1,5 @@
 extends layout.pug
+- var url="https://cdn.pixabay.com/photo/2014/06/03/19/38/board-361516_960_720.jpg"
 
 block hero
     section.hero.is-dark.is-bold
@@ -15,7 +16,7 @@ block content
                     .card
                         .card-image
                             figure.image(style="height: 190px")
-                                img(src=product.image style="height: 100%; object-fit: cover")
+                                img(data-src=url alt="Not found" style="height: 100%; object-fit: cover")
                         .card-content
                             h1.title= product.name
                             .button.is-fullwidth.is-primary
